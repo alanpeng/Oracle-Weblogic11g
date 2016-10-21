@@ -4,7 +4,7 @@ v_oracle_website_password=Docker88
 
 v_cookie=/tmp/$$_cookie
 v_download_jdk6=http://download.oracle.com/otn-pub/java/jdk/6u45-b06/jdk-6u45-linux-x64.bin
-v_download_webloigc1036=http://download.oracle.com/otn/nt/middleware/11g/wls/1036/wls1036_generic.jar
+v_download_weblogic1036=http://download.oracle.com/otn/nt/middleware/11g/wls/1036/wls1036_generic.jar
 
 # Download JDK6
 v_Site2pstoreToken=`curl -s -A "Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0" -L $v_download_jdk6 | grep site2pstoretoken | awk -Fsite2pstoretoken {'print $2'}|awk -F\= {'print  $2'}|awk -F\" {'print $2'}`
