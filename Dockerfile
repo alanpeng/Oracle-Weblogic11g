@@ -7,7 +7,8 @@ USER root
 # Download Oracle JDK6 jdk-6u45-linux-x64.bin and WebLogic11g version 10.3.6
 ADD download_jdk6.sh /
 ADD download_weblogic1036.sh /
-RUN ./download_jdk6.sh && ./download_weblogic1036.sh && rm /download_jdk6.sh /download_weblogic1036.sh
+RUN chmod +x /*.sh
+RUN /download_jdk6.sh && /download_weblogic1036.sh && rm /download_jdk6.sh /download_weblogic1036.sh
 
 # Setup JDK6
 RUN mkdir /root/jdk
