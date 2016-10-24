@@ -4,7 +4,7 @@ MAINTAINER Alan Peng <peng.alan@gmail.com>
 
 USER root
 
-# Download Oracle JDK6 jdk-6u45-linux-x64.bin and WebLogic11g version 10.3.6
+# Download Oracle JDK6 jdk-6u45-linux-x64.bin and WebLogic11g version 10.3.6 and then install weblogic without domain initiation.
 ADD download-jdk6.sh /root
 ADD download-weblogic1036.sh /root
 ADD wls-silent.xml /root
