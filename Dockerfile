@@ -19,7 +19,7 @@ RUN chmod +x /root/*.sh && \
     rm jdk-6u45-linux-x64.bin && \
     mv jdk1.6.0_45 /root/jdk && \
     /root/jdk/jdk1.6.0_45/bin/java -jar wls1036_generic.jar -mode=silent -silent_xml=/root/wls-silent.xml && \ 
-    rm -f /root/wls1036_generic.jar /root/wls-silent.xml 
+    rm wls1036_generic.jar /root/wls-silent.xml 
 
 ENV PATH $PATH:/root/jdk/jdk1.6.0_45/bin:/root/Oracle/Middleware/oracle_common/common/bin
 
