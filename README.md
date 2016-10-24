@@ -15,7 +15,7 @@ docker run -d -name myweblogic11g -e base_domain_default_password=123456 alanpen
 
 docker logs -f myweblogic11g
 
-If everything goes well, then access the admin console by http://yourserver-ip:7001. 
+If everything goes well, then access the admin console by http://yourserver-ip:7001
 
 Username: weblogic
 
