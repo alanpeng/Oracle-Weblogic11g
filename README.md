@@ -1,5 +1,5 @@
-# Oracle-Weblogic11g-software-packages
-Oracle Weblogic11g version 1036 Dockerfile (without domain initiations)
+# Oracle-Weblogic11g-Docker
+Oracle Weblogic11g version 1036 Dockerfile (with base_domain initiation)
 
 To build your docker image, please modify the username and password of the Oracle website with your own.
 
@@ -9,4 +9,10 @@ v_oracle_website_user=peng.alan@gmail.com
 
 v_oracle_website_password=Docker88
 
-Please get my "Oracle-Weblogic11g-Cluster" for the next step.
+You can try Weblogic 11g by executing the command as below:
+docker run -d -name myweblogic11g -e base_domain_default_password=123456 alanpeng/oracle-weblogic11g:1036
+docker logs -f myweblogic11g
+
+If everything goes well, then access the admin console by http://yourserver-ip:7001. 
+Username: weblogic
+Password: 123456
