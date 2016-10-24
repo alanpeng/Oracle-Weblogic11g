@@ -13,7 +13,7 @@ You can also get this image directly by command:  docker pull alanpeng/oracle-we
 
 You can try Weblogic 11g by executing the command as below:
 
-docker run -d -name myweblogic11g -e base_domain_default_password=123456 alanpeng/oracle-weblogic11g:1036
+docker run -d --name myweblogic11g -e base_domain_default_password=123456 -p 7001:7001 alanpeng/oracle-weblogic11g:1036
 
 docker logs -f myweblogic11g
 
