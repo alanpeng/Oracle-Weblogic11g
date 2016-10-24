@@ -5,14 +5,14 @@ MAINTAINER Alan Peng <peng.alan@gmail.com>
 USER root
 
 # Download Oracle JDK6 jdk-6u45-linux-x64.bin and WebLogic11g version 10.3.6
-ADD download-jdk6.sh /
-ADD download-weblogic1036.sh /
-ADD wls-silent.xml /
+ADD download-jdk6.sh /root
+ADD download-weblogic1036.sh /root
+ADD wls-silent.xml /root
 
-RUN chmod +x /*.sh && \
-    /download-jdk6.sh && \
-    /download-weblogic1036.sh && \
-    rm /download-jdk6.sh /download-weblogic1036.sh && \
+RUN chmod +x /root/*.sh && \
+    /root/download-jdk6.sh && \
+    /root/download-weblogic1036.sh && \
+    rm -f /root/download-jdk6.sh /root/download-weblogic1036.sh && \
     mkdir /root/jdk && \
     chmod +x jdk-6u45-linux-x64.bin && \
     ./jdk-6u45-linux-x64.bin && \
