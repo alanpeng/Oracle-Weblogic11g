@@ -9,7 +9,7 @@ v_oracle_website_user=peng.alan@gmail.com
 
 v_oracle_website_password=Docker88
 
-You can also get this image directly by command:  docker pull alanpeng/oracle-weblogic11g:1036
+You can also get this image directly by command:  docker pull alanpeng/oracle-weblogic11g
 
 You can try Weblogic 11g by executing the command as below:
 
